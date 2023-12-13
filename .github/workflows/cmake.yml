@@ -84,7 +84,7 @@ jobs:
         CXX: icx
       run: |
         . /opt/intel/oneapi/setvars.sh
-        export PATH=/opt/intel/oneapi/compiler/2024.0/bin:${PATH}
+        export PATH=/opt/intel/oneapi/compiler/2024.0/bin/icx:${PATH}
         cd build
         cmake -DFIRESTARTER_BUILD_TYPE="FIRESTARTER_ONEAPI" ..
     - name: Run CMake configure
