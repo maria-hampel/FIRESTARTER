@@ -83,7 +83,7 @@ jobs:
       env:
         CXX: icx
       run: |
-        source /opt/intel/oneapi/compiler/2024.0/env/vars.sh
+        . /opt/intel/oneapi/setvars.sh
         cd build
         cmake -DFIRESTARTER_BUILD_TYPE="FIRESTARTER_ONEAPI" ..
     - name: Run CMake configure
